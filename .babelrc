@@ -1,8 +1,5 @@
 {
-  "presets": [
-    "@babel/preset-env",
-    "@babel/preset-react",
-    "next/babel",
+  "plugins": [
     "@babel/plugin-transform-runtime"
   ],
   "env": {
@@ -15,6 +12,13 @@
     },
     "development": {
       "presets": [
+        "next/babel"
+      ]
+    },
+    "production": {
+      "presets": [
+        "@babel/preset-env",
+        "@babel/preset-react",
         "next/babel"
       ]
     }
