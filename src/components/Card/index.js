@@ -15,15 +15,15 @@ const Card = ({ launch }) => {
 						))}
 					</ul>
 				)}
-				<li>
+				<li className="rowFlex">
 					<strong>Launch Year: </strong>
 					{launch.launch_year}
 				</li>
-				<li>
+				<li className="rowFlex">
 					<strong>Successful Launch: </strong>
 					{launch.hasOwnProperty('launch_success') && launch.launch_success + ""}
 				</li>
-				<li>
+				<li className="rowFlex">
 					<strong>Successful Landing: </strong>
 					{launch.rocket.first_stage.cores[0].land_success + ""}
 				</li>

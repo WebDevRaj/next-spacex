@@ -90,11 +90,14 @@ body {
 }
 
 .card_detail {
-	padding-left: 0;
+    padding-left: 0;
+    font-size: 14px;
 }
 
 .card_detail > li {
-	list-style: none;
+    list-style: none;
+    align-items: center;
+    margin-bottom: 5px;
 }
 
 .card_head {
