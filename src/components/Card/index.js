@@ -27,7 +27,7 @@ const Card = ({ launch }) => {
 				</li>
 				<li>
 					<strong>Successful Landing: </strong>
-					{launch.hasOwnProperty('launch_landing') && launch.launch_landing + ""}
+					{ launch.rocket.first_stage.cores[0].land_success + ""}
 				</li>
 			</ul>
 		</div>

@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import axios from 'axios';
 
-import Card from "../src/components/Card";
-import Loader from "../src/components/Loader";
-import Filters from '../src/components/Filters';
+import Card from "../components/Card";
+import Loader from "../components/Loader";
+import Filters from '../components/Filters';
 
 const url = "https://api.spaceXdata.com/v3/launches";
 
