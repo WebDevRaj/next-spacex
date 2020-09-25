@@ -17,15 +17,15 @@ const Card = ({ launch }) => {
 				)}
 				<li className="rowFlex">
 					<strong>Launch Year: </strong>
-					{launch.launch_year}
+					<span data-test-id='launch_year'>{launch.launch_year}</span>
 				</li>
 				<li className="rowFlex">
 					<strong>Successful Launch: </strong>
-					{launch.hasOwnProperty('launch_success') && launch.launch_success + ""}
+					<span data-test-id='launch_success'>{launch.hasOwnProperty('launch_success') && launch.launch_success + ""}</span>
 				</li>
 				<li className="rowFlex">
 					<strong>Successful Landing: </strong>
-					{launch.rocket.first_stage.cores[0].land_success + ""}
+					<span data-test-id='launch_land'>{launch.rocket.first_stage.cores[0].land_success + ""}</span>
 				</li>
 			</ul>
 		</div>
