@@ -136,20 +136,27 @@ body {
 	.main_container {
 		flex-direction: column;
 		align-items: center;
-    }
+	}
+	.filters {
+		max-width: 100%;
+	}
     .cards_wrapper {
         justify-content: center;
-        width: 250px;
+        width: 100%;
     }
     .card {
-        width:200px
+		width:90%;
+		max-height: unset;
     }
 }
 
 @media only screen and (min-width: 700px) {
 	.main_container {
 		flex-direction: row;
-    }
+	}
+	.filters {
+		max-width: 200px;
+	}
     .cards_wrapper {
         width: 500px;
     }
